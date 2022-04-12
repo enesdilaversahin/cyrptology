@@ -1,3 +1,21 @@
+import sys
+from termcolor import colored, cprint
+
+def about():
+    print(colored("#░█████╗░██╗░░░██╗██████╗░██████╗░████████╗░█████╗░███╗░░██╗", "green"))
+    print(colored("#██╔══██╗╚██╗░██╔╝██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗████╗░██║", "green"))
+    print(colored("#██║░░╚═╝░╚████╔╝░██████╔╝██████╔╝░░░██║░░░██║░░██║██╔██╗██║", "green"))
+    print(colored("#██║░░██╗░░╚██╔╝░░██╔══██╗██╔═══╝░░░░██║░░░██║░░██║██║╚████║", "green"))
+    print(colored("#╚█████╔╝░░░██║░░░██║░░██║██║░░░░░░░░██║░░░╚█████╔╝██║░╚███║", "green"))
+    print(colored("#░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░░░░╚═╝░░░░╚════╝░╚═╝░░╚══╝", "green"))
+    print(colored("# author      :","green")+"Dilaver Şahin")
+    print(colored("# linkedin    :","green")+"https://www.linkedin.com/in/dilaver-%C5%9Fahin-b14907203")
+    print(colored("# github      :","green")+"https://github.com/enesdilaversahin")
+    print(colored("# title       :", "green") + "crypton.py")
+    print(colored("# description :", "green") + "Sezar Encryption System")
+    print(colored("# date        :", "green") + "12.04.2022")
+    print(colored("# version     :", "green") + "1.0")
+    print("#==============================================================================")
 MAX_KEY_VALUE=26
 def getType():
     while True:
@@ -14,6 +32,7 @@ def getKey():
         else:
             print("enter a  key value  1-{}: ".format(MAX_KEY_VALUE))
 def getMessage(message,key,type):
+
     if type == "d":
         key = -key
     translated = ""
@@ -37,6 +56,7 @@ def getMessage(message,key,type):
     return translated
 
 
+entry = about()
 type = getType()
 key = getKey()
 message = input("enter message : ")
