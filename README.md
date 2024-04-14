@@ -1,4 +1,4 @@
-# cyrpton is a cesar encryption application Python Code
+# cyrpton is a Caesar encryption application Python Code
 
 We have a massage and we want to send it encrypted to someone. for privacy
 
